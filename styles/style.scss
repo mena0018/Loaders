@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   background-image: repeating-linear-gradient(
       135deg,
       rgba(93, 93, 93, 0.1) 0px,
@@ -165,7 +166,6 @@ body {
 
     .letter {
       font-size: 30px;
-      font-family: 'Helvetica Neue', 'Arial', sans-serif;
       color: grey;
     }
   }
@@ -182,8 +182,7 @@ body {
   }
   100% {
     color: midnightblue;
-    text-shadow: 0 0 7px midnightblue,
-    0 0 50px darkblue;
+    text-shadow: 0 0 7px midnightblue;
   }
 }
 
@@ -191,5 +190,22 @@ body {
 @for $i from 1 through 9 {
   .letter:nth-child(#{$i}) {
     animation: animColor 1.4s linear 0.1s * $i infinite;
+  }
+}
+
+.animate {
+  text-align: center;
+  font-size: 30px;
+  animation: blurEffect 1s ease infinite alternate;
+}
+
+@keyframes blurEffect {
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+    filter: blur(5px);
+    letter-spacing: 3px;
   }
 }
