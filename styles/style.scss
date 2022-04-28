@@ -119,10 +119,40 @@ body {
 }
 
 
-@for $i from 1 through 6 {
+@for $i from 1 through 5 {
    .rect#{$i} {
-      animation: scale 1s infinite linear;
-      animation-delay: 0.1s*$i;
+      animation: scale 1s infinite 0.1s*$i linear;
    }
+}
+
+
+.anim4 {
+
+  div {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 2px;
+  }
+}
+
+@keyframes grossir {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@for $i from 1 through 3 {
+  .point#{$i} {
+    animation: grossir 0.5s ease-in-out alternate  0.1s * $i infinite;
+  }
 }
 
