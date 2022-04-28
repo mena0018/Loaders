@@ -158,4 +158,66 @@ body {
   animation: grossir 0.5s ease-in-out alternate 0.3s infinite;
 }
 
+.anim:nth-child(5) {
+  background: rgba(146, 151, 192, 0.2745098039);
+}
+.anim:nth-child(5) .anim5 {
+  display: flex;
+}
+.anim:nth-child(5) .anim5 .letter {
+  font-size: 30px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: grey;
+}
+
+@keyframes animColor {
+  0% {
+    color: grey;
+    text-shadow: none;
+  }
+  90% {
+    color: grey;
+    text-shadow: none;
+  }
+  100% {
+    color: midnightblue;
+    text-shadow: 0 0 7px midnightblue, 0 0 50px darkblue;
+  }
+}
+.letter:nth-child(1) {
+  animation: animColor 1.4s linear 0.1s infinite;
+}
+
+.letter:nth-child(2) {
+  animation: animColor 1.4s linear 0.2s infinite;
+}
+
+.letter:nth-child(3) {
+  animation: animColor 1.4s linear 0.3s infinite;
+}
+
+.letter:nth-child(4) {
+  animation: animColor 1.4s linear 0.4s infinite;
+}
+
+.letter:nth-child(5) {
+  animation: animColor 1.4s linear 0.5s infinite;
+}
+
+.letter:nth-child(6) {
+  animation: animColor 1.4s linear 0.6s infinite;
+}
+
+.letter:nth-child(7) {
+  animation: animColor 1.4s linear 0.7s infinite;
+}
+
+.letter:nth-child(8) {
+  animation: animColor 1.4s linear 0.8s infinite;
+}
+
+.letter:nth-child(9) {
+  animation: animColor 1.4s linear 0.9s infinite;
+}
+
 /*# sourceMappingURL=style.css.map */

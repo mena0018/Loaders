@@ -156,3 +156,40 @@ body {
   }
 }
 
+
+.anim:nth-child(5) {
+  background: #9297c046;
+
+  .anim5 {
+    display: flex;
+
+    .letter {
+      font-size: 30px;
+      font-family: 'Helvetica Neue', 'Arial', sans-serif;
+      color: grey;
+    }
+  }
+}
+
+@keyframes animColor {
+  0% {
+    color: grey;
+    text-shadow: none;
+  }
+  90% {
+    color: grey;
+    text-shadow: none;
+  }
+  100% {
+    color: midnightblue;
+    text-shadow: 0 0 7px midnightblue,
+    0 0 50px darkblue;
+  }
+}
+
+
+@for $i from 1 through 9 {
+  .letter:nth-child(#{$i}) {
+    animation: animColor 1.4s linear 0.1s * $i infinite;
+  }
+}
