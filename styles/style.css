@@ -84,5 +84,57 @@ body {
     transform: scale(0);
   }
 }
+.anim3 {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anim3 > div {
+  width: 6px;
+  height: 100%;
+  background: #333;
+  margin: 0 2px;
+}
+
+@keyframes scale {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+.rect1 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.1s;
+}
+
+.rect2 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.2s;
+}
+
+.rect3 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.rect4 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.4s;
+}
+
+.rect5 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.rect6 {
+  animation: scale 1s infinite linear;
+  animation-delay: 0.6s;
+}
 
 /*# sourceMappingURL=style.css.map */
