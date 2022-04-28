@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -32,6 +34,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.anim1 {
+  width: 64px;
+  height: 64px;
+  border: 6px solid rgb(128, 128, 128);
+  border-color: #333 transparent #333 transparent;
+  border-radius: 50%;
+  animation: rotation 1.2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
