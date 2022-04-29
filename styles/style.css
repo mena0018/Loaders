@@ -60,7 +60,8 @@ body {
   position: relative;
 }
 
-.rond1, .rond2 {
+.rond1,
+.rond2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -234,6 +235,56 @@ body {
     opacity: 0.3;
     filter: blur(5px);
     letter-spacing: 3px;
+  }
+}
+.anim7 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anim7 .loader {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #31708e;
+  animation: spin 2s linear infinite;
+}
+.anim7 .loader::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #5085a5;
+  animation: spin 3s linear infinite;
+}
+.anim7 .loader::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #8fc1e3;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
